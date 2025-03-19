@@ -1,0 +1,12 @@
+name: show-directory-and-say-hello
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ls -la
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Make
+        run: make say-hello
